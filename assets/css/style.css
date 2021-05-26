@@ -87,7 +87,7 @@ body {
 }
 
 .button {
-  margin-top: 10vh;
+  margin-top: 15vh;
 }
 
 .button button {
@@ -97,6 +97,15 @@ body {
   border: none;
   width: 125%;
   font-size: 2vh;
+  border: 2px solid hsl(0, 0%, 95%);
+}
+
+.button button:hover,
+.button button:focus {
+  transition: 500ms;
+  cursor: pointer;
+  background: inherit;
+  color: hsl(0, 0%, 95%);
 }
 
 .sedan-button {
@@ -109,4 +118,33 @@ body {
 
 .luxury-button {
   color: hsl(179, 100%, 13%);
+}
+
+@media (max-width: 770px) {
+  body {
+    height: auto;
+  }
+
+  .container {
+    flex-direction: column;
+    min-height: 75%;
+    min-width: 90%;
+    margin: 3vh;
+  }
+
+  .sedan {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .luxury {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  .text p {
+    font-size: 2.75vh;
+  }
 }
