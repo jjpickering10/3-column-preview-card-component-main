@@ -13,7 +13,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](assets/images/amiresponsive.png)
 
 ### Links
 
